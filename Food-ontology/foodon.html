@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Food Explorer</title>
+  <link rel="stylesheet" href="foodon.css">
+</head>
+<body>
+  <div class="header">
+    <a href="/Food-diet-ontology/index.html" target="_blank"><div class="foodie">
+      <p>Food Recipe</p>
+    </div>
+    </a>
+    <a href="/foodon-semantic/foods.html" target="_blank"><div class="schema">
+      <p>Explorer Network</p>
+    </div>
+    </a>
+    <a href="/Semantics/Food.html" target="_blank"><div class="schema">
+      <p>Recipe Network</p>
+    </div>
+    </a>
+  </div>
+
+  <h1>Fresh Food Explorer</h1>
+  
+  <div class="preferences">
+    <h2>Select a Crop</h2>
+    <select id="crop-select">
+      <option value="">--Select a Crop--</option>
+    </select>
+    <button id="explore-button">Explore Relationships</button>
+  </div>
+
+  <div class="details">
+    <div class="crop-details">
+      <div id="crop-info">
+        <h2>Crop Details</h2>
+        <p id="details-placeholder">Select a crop to view its details and relationships.</p>
+      </div>
+      <div id="crop-image">
+        <img id="crop-image-display" src="" alt="" style="display: none;">
+      </div>
+    </div>
+    <div id="similar-crops">
+      <!-- Similar crop details will be dynamically added here -->
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="foodon.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqbAm4EHNXiMM54WU9m86VjBeneQ9YGW4&callback=initMap"
+    async
+    defer
+  ></script>
+</body>
+</html>

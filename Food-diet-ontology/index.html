@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Berkeley Food Recommendation App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Berkeley Food Recommendation App</h1>
+
+  <div class="preferences">
+    <h2>Select Your Preferences</h2>
+    <form id="preferences-form">
+      <label for="dietary">Dietary Preferences:</label><br>
+      <select id="dietary" name="dietary">
+        <option value="">--Any--</option>
+        <option value="Vegan">Vegan</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Gluten-Free">Gluten-Free</option>
+        <option value="Halal">Halal</option>
+        <option value="Dairy-Free">Dairy-Free</option>
+        <option value="Nut-Free">Nut-Free</option>
+        <!-- Additional dietary preferences -->
+        <option value="Keto">Keto</option>
+        <option value="Paleo">Paleo</option>
+        <option value="Low-Carb">Low-Carb</option>
+        <option value="Pescatarian">Pescatarian</option>
+      </select><br><br>
+
+      <label for="cuisine">Preferred Cuisine:</label><br>
+      <select id="cuisine" name="cuisine">
+        <option value="">--Any--</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Middle Eastern">Middle Eastern</option>
+        <option value="American">American</option>
+        <option value="Vietnamese">Vietnamese</option>
+        <!-- Additional cuisines -->
+        <option value="Chinese">Chinese</option>
+        <option value="Indian">Indian</option>
+        <option value="Thai">Thai</option>
+        <option value="French">French</option>
+      </select><br><br>
+
+      <button type="button" onclick="getRecommendations()">Get Recommendations</button>
+    </form>
+  </div>
+
+  <div class="recommendations">
+    <h2>Recommended Food Items</h2>
+    <ul id="recommendations-list">
+      <!-- Recommendations will appear here -->
+    </ul>
+  </div>
+
+  <!-- Map Container -->
+  <div id="map"></div>
+
+  <!-- Include JavaScript File -->
+  <script src="script.js"></script>
+  <!-- Include Google Maps JavaScript API -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqbAm4EHNXiMM54WU9m86VjBeneQ9YGW4&callback=initMap"
+    async
+    defer
+  ></script>
+</body>
+</html>
