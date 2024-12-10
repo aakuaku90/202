@@ -6,15 +6,6 @@ body {
   color: #333;
 }
 
-.header {
-  background-color: rgb(5, 108, 204);
-  height: 70px;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
 
 a {
   text-decoration: none; /* Remove underline from all links */

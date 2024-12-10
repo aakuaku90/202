@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Food Explorer</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>Fresh Food Explorer</h1>
+
+  <div class="preferences">
+    <h2>Select a Crop</h2>
+    <select id="crop-select">
+      <option value="">--Select a Crop--</option>
+    </select>
+    <button id="explore-button">Explore Relationships</button>
+  </div>
+
+  <div class="facets">
+    <h2>Filter Crops</h2>
+    <label for="region-select">Region:</label>
+    <select id="region-select">
+      <option value="">--Select Region--</option>
+      <option value="North America">North America</option>
+      <option value="Europe">Europe</option>
+      <option value="Asia">Asia</option>
+      <option value="Africa">Africa</option>
+      <option value="South America">South America</option>
+      <option value="Australia">Australia</option>
+    </select>
+
+    <label for="season-select">Season:</label>
+    <select id="season-select">
+      <option value="">--Select Season--</option>
+      <option value="Spring">Spring</option>
+      <option value="Summer">Summer</option>
+      <option value="Fall">Fall</option>
+      <option value="Winter">Winter</option>
+    </select>
+
+    <label for="soil-select">Preferred Soil:</label>
+    <select id="soil-select">
+      <option value="">--Select Soil--</option>
+      <option value="Loamy">Loamy</option>
+      <option value="Sandy">Sandy</option>
+      <option value="Clay">Clay</option>
+      <option value="Silt">Silt</option>
+    </select>
+
+    <div class="organic-filter">
+      <input type="checkbox" id="organic-check">
+      <label for="organic-check">Organic Only</label>
+    </div>
+  </div>
+
+  <div class="details">
+    <div class="crop-details">
+      <div id="crop-info">
+        <h2>Crop Details</h2>
+        <p id="details-placeholder">Select a crop to view its details and relationships.</p>
+      </div>
+      <div id="crop-image">
+        <img id="crop-image-display" src="" alt="" style="display: none;">
+      </div>
+    </div>
+    <div id="similar-crops">
+      <!-- Similar crop details will be dynamically added here -->
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="main.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqbAm4EHNXiMM54WU9m86VjBeneQ9YGW4&callback=initMap"
+    async
+    defer>
+  </script>
+</body>
+</html>

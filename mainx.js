@@ -561,8 +561,8 @@ function displayDetails(crop) {
     <p><strong>Color:</strong> ${crop.color}</p>
     <p><strong>Category:</strong> ${crop.category}</p>
     <p><strong>Nutritional Value:</strong> ${crop.nutritionalValue}</p>
-    <p><strong>Where It's Mostly Used:</strong> ${crop.whereUsed}</p>
-    <p><strong>Used For:</strong> ${crop.usedFor.join(', ')}</p>
+    <p><strong>Mostly Used In:</strong> ${crop.whereUsed}</p>
+    <p><strong>Mostly Used For:</strong> ${crop.usedFor.join(', ')}</p>
     <p><strong>Health Benefits:</strong> ${crop.healthBenefits}</p>
     <p><strong>Know-How:</strong> ${crop.knowHow}</p>
   `;
@@ -596,8 +596,8 @@ function displaySimilarCrops(selectedCrop) {
             <p><strong>Color:</strong> ${similarCrop.color}</p>
             <p><strong>Category:</strong> ${similarCrop.category}</p>
             <p><strong>Nutritional Value:</strong> ${similarCrop.nutritionalValue}</p>
-            <p><strong>Used For:</strong> ${similarCrop.usedFor.join(', ')}</p>
-            <p><strong>Where It's Mostly Used:</strong> ${similarCrop.whereUsed}</p>
+            <p><strong>Mostly Used For:</strong> ${similarCrop.usedFor.join(', ')}</p>
+            <p><strong>Mostly Used In:</strong> ${similarCrop.whereUsed}</p>
             <p><strong>Health Benefits:</strong> ${similarCrop.healthBenefits}</p>
           </div>
           <div class="similar-crop-image">

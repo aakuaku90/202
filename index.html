@@ -2,58 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fresh Food Explorer</title>
-  <link rel="stylesheet" href="foodon.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Ontology</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div class="header">
-    <a href="/Food-diet-ontology/index.html" target="_blank"><div class="foodie">
-      <p>Food Recipe</p>
-    </div>
-    </a>
-    <a href="/foodon-semantic/foods.html" target="_blank"><div class="schema">
-      <p>Explorer Network</p>
-    </div>
-    </a>
-    <a href="/Semantics/Food.html" target="_blank"><div class="schema">
-      <p>Recipe Network</p>
-    </div>
-    </a>
-  </div>
-
-  <h1>Fresh Food Explorer</h1>
   
-  <div class="preferences">
-    <h2>Select a Crop</h2>
-    <select id="crop-select">
-      <option value="">--Select a Crop--</option>
-    </select>
-    <button id="explore-button">Explore Relationships</button>
-  </div>
+  <!-- Background Video -->
+  <video autoplay muted loop id="background-video">
+    <source src="https://videos.pexels.com/video-files/6609494/6609494-uhd_2732_1440_30fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-  <div class="details">
-    <div class="crop-details">
-      <div id="crop-info">
-        <h2>Crop Details</h2>
-        <p id="details-placeholder">Select a crop to view its details and relationships.</p>
-      </div>
-      <div id="crop-image">
-        <img id="crop-image-display" src="" alt="" style="display: none;">
-      </div>
+  <!-- Content Wrapper -->
+  <section class="content">
+    <header>
+      <p><a href="main.html" target="_blank">Crops Ontology</a></p>
+      <p><a href="recipe.html" target="_blank">Food Recipe</a></p>
+      <p><a href="semantic.html" target="_blank">Recipe Graph</a></p>
+      <p><a href="cropsemantic.html" target="_blank">Crop Graph</a></p>
+    </header>
+
+    <div class="main">
+      <h1>Explore Food Ontology</h1>
+      <h3>Explore the rich connections between food preferences, recipes, and crop details!</h3>
     </div>
-    <div id="similar-crops">
-      <!-- Similar crop details will be dynamically added here -->
-    </div>
-  </div>
+  </section>
 
-  <div id="map"></div>
-
-  <script src="foodon.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqbAm4EHNXiMM54WU9m86VjBeneQ9YGW4&callback=initMap"
-    async
-    defer
-  ></script>
 </body>
 </html>
